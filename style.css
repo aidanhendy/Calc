@@ -10,8 +10,8 @@ body{
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the title and calculator horizontally */
-    gap: 20px; /* Space between the title and calculator */
+    align-items: center; 
+    gap: 20px; 
 }
 
 .title{
@@ -24,16 +24,16 @@ body{
     color: hsl(0, 0%, 15%);
 }
 .title a{ 
-    margin: 0; /* Remove default margin */
-    font-size: 20px; /* Slightly smaller font size */
-    color: hsl(210, 100%, 40%); /* Link color */
-    text-decoration: none; /* Remove underline */
-    display: block; /* Ensures it takes a new line */
-    padding-top: 10px; /* Add spacing above the link */
+    margin: 0; 
+    font-size: 20px; 
+    color: hsl(210, 100%, 40%); 
+    text-decoration: none; 
+    display: block; 
+    padding-top: 10px; 
 }
 
 .title a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline; 
 }
 
 #calc{
