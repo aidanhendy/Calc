@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the title and calculator horizontally */
+    gap: 20px; /* Space between the title and calculator */
+}
+
+.title{
+    text-align: center;
+}
+
+.title h1{ 
+    margin: 0;
+    font-size: 24px;
+    color: hsl(0, 0%, 15%);
+}
+.title a{ 
+    margin: 0; /* Remove default margin */
+    font-size: 20px; /* Slightly smaller font size */
+    color: hsl(210, 100%, 40%); /* Link color */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Ensures it takes a new line */
+    padding-top: 10px; /* Add spacing above the link */
+}
+
+.title a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+#calc{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+    padding: 25px;
+
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+
+}
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+.operator-btn{
+    background-color: hsl(35, 100%, 50%);
+}
+.operator-btn:hover{
+    background-color: hsl(35, 100%, 65%);
+}
+.operator-btn:active{
+    background-color: hsl(35, 100%, 75%);
+}
